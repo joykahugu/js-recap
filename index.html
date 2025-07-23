@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+ </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Q0yHqYI-WfYFervZG",
+      });
+   })();
+  </script>
+</head>
+
+<!-- CONTACT FORM WITH MESSAGE THAT LASTS THREE SECONDS WITH NAMES AND ACKNOWLEDGEMENT, STYLE THE FORM, USE EMAIL JS-->
+
+<body>
+
+    <form action="submit" id="contact-form" class="bg-blue-100 m-20">
+        <p class="underline text-center text-gray-700"><i>Contact Information</i></p> <br>
+
+        <div class="flex ml-20 mt-5 justify-between">
+
+            <label for="name" class="text-center">
+                Name:
+              <input type="text" class="name outline w-50" id="name" required></input>
+            </label>
+            <label for="phonenumber" class="text-center">
+                Mobile/Tel No.:
+              <input type="number" class="phonenumber outline w-50" required></input>
+            </label>
+            <label for="email"> Email Address:
+                <input type="email" class="emailaddress outline w-60" required> </input>
+            </label> <br>
+            
+           
+        </div>
+
+        <div class="flex flex-col m-10 justify-center items-center">
+            <label for="message"> Any Questions? Write to Us:
+              <textarea name="message" id="message" class="outline w-250 h-30"></textarea>
+            </label>
+            
+        <button type="submit" class="submit block bg-black text-white rounded-md w-20 h-10 mt-5 " id="submitbtn" onclick="sendMail()">Submit</button>
+
+        </div>
+        <p id="notification"></p>
+        
+
+    </form>
+    <script src="dom.js"></script>
+</body>
+
+</html>
