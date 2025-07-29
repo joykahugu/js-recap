@@ -1,0 +1,23 @@
+    [
+        {
+        "id": 1001,
+        "name": "Jane Doe",
+        "course": "Software Dev",
+        "age": 20  
+        } ,
+
+       {
+        
+        "id": 1002,
+        "name": "John Smith",
+        "course": "Data Science",
+        "age": 22 
+        } ,
+       
+      {
+        "id": 1003,
+        "name": "Bob Joe",
+        "course": "Dev Ops",
+        "age": 25 
+      }
+    ]
